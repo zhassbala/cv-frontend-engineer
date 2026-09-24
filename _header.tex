@@ -1,0 +1,23 @@
+%====================
+% Header: Contact
+%====================
+
+\RequirePackage{fancyhdr}
+\fancypagestyle{fancy}{
+\fancyhf{}
+\lhead{}
+\chead{
+	{\Huge \scshape {\name}} \\ \vspace{1pt}
+    \city \\ \vspace{1pt}
+    \small \href{tel:\phone}{\raisebox{-0.1\height}\faPhone\ \phone} ~ \href{mailto:\email}{\raisebox{-0.2\height}\faEnvelope\  \email} ~ 
+    \href{https://www.linkedin.com/in/\LinkedIn}{\raisebox{-0.2\height}\faLinkedin\ \LinkedIn}  ~
+    \href{https://github.com/\github}{\raisebox{-0.2\height}\faGithub\ {\github}} ~
+    \vspace{-8pt}
+	}%
+\rhead{}
+\renewcommand{\headrule}{}
+}
+\pagestyle{fancy}
+
+\setlength{\headheight}{70pt}
+\setlength{\headsep}{5pt}

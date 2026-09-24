@@ -1,0 +1,30 @@
+# Extra TeX Live packages on top of scheme-basic / MacTeX Basic.
+# tlmgr does not install soft dependencies, so those are listed here too.
+# Install: make setup    or    powershell -File scripts/setup-tex.ps1
+# TeX Live 2026 renamed the font package to sourcesans. Older releases
+# still call it sourcesanspro; the setup script tries both.
+# Already in scheme-basic, not listed:
+#   geometry hyperref xcolor csquotes babel blindtext fancyhdr
+#   fontenc inputenc multicol etoolbox filehook graphicx xkeyval tools
+
+# --- direct: TLCresume.sty / resume.tex ---
+sourcesans
+fontawesome5
+enumitem
+titlesec
+moresize
+anyfontsize
+tasks
+standalone
+
+# --- soft dependencies tlmgr will not pull in for you ---
+fontaxes
+ly1
+currfile
+filemod
+gincltex
+svn-prov
+adjustbox
+collectbox
+ifoddpage
+varwidth
